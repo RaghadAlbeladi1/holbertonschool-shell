@@ -1,8 +1,2 @@
 #!/bin/bash
-# Copy only newer or non-existing HTML files to the parent directory
-
-for file in *.html; do
-  if [ -f "$file" ]; then
-    cp -u "$file" ../
-  fi
-done
+cp -u *.html ..
