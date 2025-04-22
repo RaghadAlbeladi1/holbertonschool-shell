@@ -1,0 +1,6 @@
+#!/bin/bash
+# Check if the owner of the file is guillaume
+if [ "$(stat -c %U hello)" = "guillaume" ]; then
+  # Change the owner to vincent
+  chown vincent hello
+fi
