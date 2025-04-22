@@ -1,5 +1,2 @@
 #!/bin/bash
-if [ "$(stat -c %U hello)" = "guillaume" ]; then
-  # تغيير المالك إلى "vincent"
-  chown vincent hello
-fi
+chown --from=guillaume vincent hello
